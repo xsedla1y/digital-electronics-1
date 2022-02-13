@@ -3,4 +3,4 @@
 # H1
 1. *kurzíva* _kurzíva2_
 2. **zdůraznění** nebo __zdůraznění2__
-3. **kombinované a _zdůraznění_**
+3. **_kombinované a zdůraznění_**
