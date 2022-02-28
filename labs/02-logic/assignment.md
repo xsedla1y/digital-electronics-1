@@ -4,7 +4,8 @@
 
 1. Karnaugh maps for other two functions:
 
-   Greater & less than + Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.:
+   Greater & less than + Equations of simplified SoP (Sum of the Products) form of the "greater than" function 
+   and simplified PoS (Product of the Sums) form of the "less than" function:
 
    ![K-maps](https://github.com/xsedla1y/digital-electronics-1/blob/main/labs/images/K-maps.png)
 
