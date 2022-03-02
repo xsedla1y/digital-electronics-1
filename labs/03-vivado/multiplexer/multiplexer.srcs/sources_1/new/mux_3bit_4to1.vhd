@@ -36,13 +36,16 @@ entity mux_3bit_4to1 is
            b_i : in STD_LOGIC_VECTOR (2 downto 0);
            c_i : in STD_LOGIC_VECTOR (2 downto 0);
            d_i : in STD_LOGIC_VECTOR (2 downto 0);
+           
            sel : in STD_LOGIC_VECTOR (1 downto 0);
            f_o : out STD_LOGIC_VECTOR (2 downto 0));
 end mux_3bit_4to1;
 
 architecture Behavioral of mux_3bit_4to1 is
-
 begin
-
-
-end Behavioral;
+f_o <= a_i when (sel = "00") else
+       b_i when (sel = "01") else
+       c_i when (sel = "10") else
+       d_i when (sel = "11");
+       
+end architecture Behavioral;
