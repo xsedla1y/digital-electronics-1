@@ -98,7 +98,7 @@
 
 2. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
 
-  ![simPC4]()
+  ![simPC4](https://github.com/xsedla1y/digital-electronics-1/blob/9fea5309e6eb5dfa0a875883e37b7862f54fd240/labs/images/cv04_sim.jpg)
 
 ### LED(7:4) indicators
 
