@@ -5,11 +5,11 @@
 1. Listing of VHDL stimulus process from testbench file (`tb_hex_7seg.vhd`) with asserts. Verify all input combinations. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
 ```vhdl
- p_stimulus : process
+    p_stimulus : process
     begin
         report "Stimulus process started" severity note;
 
-        -- 0 test case
+-- 0 test case
         s_hex <= "0000"; wait for 50 ns;
         assert (s_seg = "0000001")
         report "Input combination 0000 FAILED" severity error;
@@ -43,74 +43,6 @@
         s_hex <= "0110"; wait for 50 ns;
         assert (s_seg = "0000100")
         report "Input combination 0110 FAILED" severity error;
-        
-        -- 7 test case
-        s_hex <= "0111"; wait for 50 ns;
-        assert (s_seg = "0001111")
-        report "Input combination 0111 FAILED" severity error;
-        
-        -- 8 test case
-        s_hex <= "1000"; wait for 50 ns;
-        assert (s_seg = "0000000")
-        report "Input combination 1000 FAILED" severity error;
-        
-        -- 9 test case
-        s_hex <= "1001"; wait for 50 ns;
-        assert (s_seg = "0000100")
-        report "Input combination 1001 FAILED" severity error;
-        
-        -- A test case
-        s_hex <= "1010"; wait for 50 ns;
-        assert (s_seg = "0001000")
-        report "Input combination 1010 FAILED" severity error;
-        
-        -- B test case
-        s_hex <= "1011"; wait for 50 ns;
-        assert (s_seg = "1100000")
-        report "Input combination 1011 FAILED" severity error;
-        
-        -- C test case
-        s_hex <= "1100"; wait for 50 ns;
-        assert (s_seg = "0110001")
-        report "Input combination 1100 FAILED" severity error;
-        
-        -- D test case
-        s_hex <= "1101"; wait for 50 ns;
-        assert (s_seg = "1000010")
-        report "Input combination 1000 FAILED" severity error;
-        
-        -- E test case
-        s_hex <= "1110"; wait for 50 ns;
-        assert (s_seg= "0110000")
-        report "Input combination 1110 FAILED" severity error;
-        
-        -- F test case
-        s_hex <= "1111"; wait for 50 ns;
-        assert (s_seg = "0111000")
-        report "Input combination 1111 FAILED" severity error;
-        
-        --diodové podmínky
-        --LED 1
-        s_hex <= "0000"; wait for 50 ns;
-        assert (s_LED1 = "1")
-        report "s_LED1 has Failed" severity error;
-        
-        --LED 2
-        s_hex <= "1101";wait for 50 ns;
-        assert (s_LED2 = "1")
-        report "s_LED2 has Failed" severity error;
-        
-        --LED 3
-		s_hex <= "1101";wait for 50 ns;
-        assert (s_LED3 = "1")
-        report "s_LED3 has Failed" severity error;
-        
-        --LED 4
-        s_hex <= "1000";wait for 50 ns;
-        assert (s_LED4 = "1")
-        report "s_LED4 has Failed" severity error;
-        
-
         report "Stimulus process finished" severity note;
         wait;
     end process p_stimulus;
