@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 03/17/2022 12:14:30 PM
 -- Design Name: 
--- Module Name: top - Behavioral
+-- Module Name: top2 - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity top is
+entity top2 is
     Port ( CLK100MHZ : in STD_LOGIC;
            SW : in STD_LOGIC;
            LED : out STD_LOGIC_VECTOR (3 downto 0);
@@ -44,12 +44,12 @@ entity top is
            CG : out STD_LOGIC;
            AN : out STD_LOGIC_VECTOR (7 downto 0);
            BTNC : in STD_LOGIC );
-end top;
+end top2;
 
 ------------------------------------------------------------------------
 -- Architecture body for top level
 ------------------------------------------------------------------------
-architecture Behavioral of top is
+architecture Behavioral of top2 is
 
   -- Internal clock enable
   signal s_en  : std_logic;

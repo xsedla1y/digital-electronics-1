@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/APPZ/Xilinx/Vivado/2020.1/ids_lite/ISE/bin/nt64;C:/APPZ/Xilinx/Vivado/2020.1/ids_lite/ISE/lib/nt64:C:/APPZ/Xilinx/Vivado/2020.1/bin
+  PATH=D:/Xilinx/Vivado/2020.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2020.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2020.2/bin
 else
-  PATH=C:/APPZ/Xilinx/Vivado/2020.1/ids_lite/ISE/bin/nt64;C:/APPZ/Xilinx/Vivado/2020.1/ids_lite/ISE/lib/nt64:C:/APPZ/Xilinx/Vivado/2020.1/bin:$PATH
+  PATH=D:/Xilinx/Vivado/2020.2/ids_lite/ISE/bin/nt64;D:/Xilinx/Vivado/2020.2/ids_lite/ISE/lib/nt64:D:/Xilinx/Vivado/2020.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Documents/Komar/digital-electronics-1/labs/06-counter/counter/counter.runs/impl_1'
+HD_PWD='D:/Documents/xsedla1y/digital-electronics-1/labs/06-counter/counter_v2/counter.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
