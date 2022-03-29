@@ -1,4 +1,4 @@
-# Lab 6: Josef Komar 230271
+# Lab 6: ONDREJ SEDLAK
 
 ### Bidirectional counter
 
